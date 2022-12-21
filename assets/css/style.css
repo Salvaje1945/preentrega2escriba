@@ -3,6 +3,120 @@
     margin:0;
 }
 
-h1 {
-    color: blue;
+/* ESTILOS BASICOS */
+
+
+
+/* FIN ESTILOS BASICOS */
+
+/* ESTILOS ESTRUCTURA PRINCIPAL */
+
+#container{
+    width:100%;
+    height:100vh;
 }
+
+.header{
+    width:100%;
+    height: auto;
+    background-color: limegreen;
+}
+
+.header__contactorow{
+    grid-area: header1;
+    width: 100%;
+    height: 25px;
+    background-color: blue;
+}
+
+.header__principal{
+    grid-area: header2;
+    width:100%;
+    height: auto;
+    background-color: blueviolet;
+}
+
+.header__principal--logo{
+    width: 40%;
+    text-align: left;
+    background-color: brown;
+}
+
+.header__principal--menu{
+    width: 40%;
+    text-align: right;
+    background-color: burlywood;
+}
+
+.header__carrousel{
+    grid-area: header3;
+    width: 100%;
+    height: auto;
+    background-color: crimson;
+}
+
+.contenido{
+    width: 100%;
+    height: auto;
+    background-color: cyan;
+}
+
+.contenido__bienvenida{
+    grid-area: cont1;
+    width: 100%;
+    height: auto;
+    background-color: darkblue;
+}
+
+.contenido__bienvenida--txt{
+    width: 50%;
+    height: auto;
+    text-align: left;
+    background-color: darkcyan;
+}
+
+.contenido__bienvenida--vid{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    background-color: darkgoldenrod;
+}
+
+.contenido__desc{
+    width: 100%;
+    height: auto;
+    background-color: darkmagenta;
+}
+
+.contenido__desc--row{
+    width: 33%;
+    height: auto;
+    background-color: darkred;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: violet;
+}
+
+.footer__links{
+    width: 100%;
+    height: auto;
+    background-color: tomato;
+}
+
+.footer__links--row{
+    width: 33%;
+    height: auto;
+    background-color: springgreen;
+}
+
+.footer__autor{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    background-color: black;
+}
+
+/* FIN ESTRUCTURA PRINCIPAL */
