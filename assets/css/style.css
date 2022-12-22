@@ -125,9 +125,12 @@ a {
 
 .cerrar {
     color: #2C82B8;
+    width: 28px;
+    height: 30px;
     display: none;
     cursor: pointer;
     text-align: center;
+    padding-bottom:3px;
 }
 
 #check {
