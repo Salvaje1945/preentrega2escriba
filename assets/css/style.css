@@ -125,12 +125,11 @@ a {
 
 .cerrar {
     color: #2C82B8;
-    width: 28px;
-    height: 30px;
     display: none;
     cursor: pointer;
     text-align: center;
-    padding-bottom:3px;
+    width: 28px;
+    height: 30px;
 }
 
 #check {
@@ -149,7 +148,6 @@ a {
 
 #check:checked ~ .cerrar {
     display: block;
-
 }
 
 .header__carrousel {
