@@ -9,7 +9,7 @@
 
 */
 
-/* Estilos generales */
+/* 1 - Estilos generales */
 
 * {
     padding: 0;
@@ -27,18 +27,18 @@ h1 {
 h1 span {
     font-size: 25px;
     display: block;
-    margin-top: -15px;
-}
+    margin-top: -11px;
+} 
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* Fin de estilos generales
 
 ****************************************************************
 
-Estilos estructura basica para moviles */
+2 - Estilos estructura basica para moviles */
 
 #container {
     display: grid;
@@ -52,6 +52,8 @@ Estilos estructura basica para moviles */
 
     ;
 }
+
+/* 2:A - Estilos de la cabecera */
 
 #header {
     grid-area: header;
@@ -75,21 +77,10 @@ Estilos estructura basica para moviles */
 }
 
 .header__principal--logo {
-    padding-top: 5px;
+    padding-top: 7px;
     text-align: left;
     display: inline-block;
 
-}
-
-@media only screen and (max-width:375px) {
-    .header__principal--logo h1 {
-        font-size: 30px;
-    }
-
-    .header__principal--logo h1 span {
-        font-size: 20px;
-        margin-top: -10px;
-    }
 }
 
 .header__principal--menu {
@@ -98,9 +89,9 @@ Estilos estructura basica para moviles */
 }
 
 .header__principal--menu ul {
-    font-size: 25px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     list-style: none;
     position: fixed;
     width: 100%;
@@ -108,14 +99,14 @@ Estilos estructura basica para moviles */
     background-color: #ededed;
     top: 80px;
     left: -100%;
-    text-align: left;
     transition: all .5s;
+    z-index: 999;
 }
 
 .header__principal--menu ul li {
     display: block;
-    padding-top: 75px;
-    padding-left: 125px;
+    padding-top: 42px;
+    text-align: center;
 }
 
 .header__principal--menu ul li a {
@@ -136,6 +127,7 @@ Estilos estructura basica para moviles */
     color: #2C82B8;
     display: none;
     cursor: pointer;
+    text-align: center;
 }
 
 #check {
@@ -143,7 +135,9 @@ Estilos estructura basica para moviles */
 }
 
 #check:checked ~ ul {
-    left:0;
+    left: 0;
+    padding-left: 0;
+    z-index: 999;
 }
 
 #check:checked ~ .hamburguesa {
@@ -152,9 +146,27 @@ Estilos estructura basica para moviles */
 
 #check:checked ~ .cerrar {
     display: block;
+
 }
 
-/* @media only screen and (min-width:768px) {
+.header__carrousel {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+/* 
+
+.header__principal--logo h1 {
+        font-size: 30px;
+    }
+
+    .header__principal--logo h1 span {
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+@media only screen and (min-width:768px) {
     .header__contactrow{
         width: 100%;
         height: 25px;
@@ -201,10 +213,6 @@ Estilos estructura basica para moviles */
         color: #000;
     }
 } */
-
-.header__carrousel {
-    display: none;
-}
 
 #contenido {
     grid-area: main;
