@@ -4,66 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
     <title>Acompañamiento terapéutico en Argentina. Isabel Rivas, acompañante terapéutica.</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fcad4ff916.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <div id="container">
-        <div class="header">
-            <div class="header__contactrow">
-                <p>Contactos rápidos</p>
+<div id="container">
+    <header id="header">
+        <section class="header__contactrow">
+            <p>Contactos rápidos</p>
+        </section>
+        <section class="header__principal">
+            <div class="header__principal--logo">
+                <h1>Isabel Rivas<br>
+                    <span>Acompañante terapéutica</span>
+                </h1>
             </div>
-            <div class="header__principal">
-                <div class="header__principal--logo">
-                    <p>Logo</p>
-                </div>
-                <div class="header__principal--menu">
-                    <p>menu</p>
-                </div>
+            <nav class="header__principal--menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="hamburguesa">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </label>
+                <label for="check" class="cerrar">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </label>
+                <ul>
+                    <li><a href="acercade.html">Sobre Mí</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="header__carrousel">
+            <p>Carrousel</p>
+        </section>
+    </header>
+    <main id="contenido">
+        <section class="contenido__bienvenida">
+            <div class="contenido__bienvenida--txt">
+                <p>Texto bienvenida</p>
             </div>
-            <div class="header__carrousel">
-                <p>Carrousel</p>
+            <div class="contenido__bienvenida--vid">
+                <p>Video bienvenida</p>
             </div>
-        </div>
-        <div class="contenido">
-            <div class="contenido__bienvenida">
-                <div class="contenido__bienvenida--txt">
-                    <p>Texto bienvenida</p>
-                </div>
-                <div class="contenido__bienvenida--vid">
-                    <p>Video bienvenida</p>
-                </div>
+        </section>
+        <section class="contenido__desc">
+            <div class="contenido__desc--row">
+                <p>Columna 1</p>
             </div>
-            <div class="contenido__desc">
-                <div class="contenido__desc--row">
-                    <p>Columna 1</p>
-                </div>
-                <div class="contenido__desc--row">
-                    <p>Columna 2</p>
-                </div>
-                <div class="contenido__desc--row">
-                    <p>Columna 3</p>
-                </div>
+            <div class="contenido__desc--row">
+                <p>Columna 2</p>
             </div>
-        </div>
-        <div class="footer">
-            <div class="footer__links">
-                <div class="footer__links--row">
-                    <p>Pie logo y redes</p>
-                </div>
-                <div class="footer__links--row">
-                    <p>Pie menú</p>
-                </div>
-                <div class="footer__links--row">
-                    <p>Pie contactos</p>
-                </div>
+            <div class="contenido__desc--row">
+                <p>Columna 3</p>
             </div>
-            <div class="footer__autor">
-                <p>Pie autor</p>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="footer__links">
+            <div class="footer__links--row">
+                <p>Pie logo y redes</p>
             </div>
-        </div>
-    </div>
-    
+            <div class="footer__links--row">
+                <p>Pie menú</p>
+            </div>
+            <div class="footer__links--row">
+                <p>Pie contactos</p>
+            </div>
+        </section>
+        <section class="footer__autor">
+            <p>Pie autor</p>
+        </section>
+    </footer>
+</div>
 </body>
 </html>

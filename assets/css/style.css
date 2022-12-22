@@ -1,34 +1,293 @@
-*{
-    padding:0;
-    margin:0;
+/* PALETA DE COLORES
+
+.color1 {color: #2C82B8;} AZUL *
+.color2 {color: #EDEDED;} GRIS CLARO
+.color3 {color: #FF99FF;} ROSA BEBE *
+.color4 {color: #E8CEAA;} BEIGE *
+.color5 {color: #444;} GRIS OSCURO
+.color6 {color: #000;} NEGRO
+
+*/
+
+/* Estilos generales */
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
-/* ESTILOS BASICOS */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
-/* FIN ESTILOS BASICOS */
+h1 {
+    color: #2C82B8;
+    font-size: 40px;
+    font-family: 'Oleo Script', cursive;
+}
 
-/* ESTILOS ESTRUCTURA PRINCIPAL */
+h1 span {
+    font-size: 25px;
+    display: block;
+    margin-top: -15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Fin de estilos generales
+
+****************************************************************
+
+Estilos estructura basica para moviles */
+
+#container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+
+        "header"
+        "main"
+        "footer"
+
+    ;
+}
+
+#header {
+    grid-area: header;
+    width: 100%;
+    height: auto;
+    background-color: #ededed;
+}
+
+.header__contactrow {
+    display: none;
+}
+
+.header__principal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.header__principal--logo {
+    padding-top: 5px;
+    text-align: left;
+    display: inline-block;
+
+}
+
+@media only screen and (max-width:375px) {
+    .header__principal--logo h1 {
+        font-size: 30px;
+    }
+
+    .header__principal--logo h1 span {
+        font-size: 20px;
+        margin-top: -10px;
+    }
+}
+
+.header__principal--menu {
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.header__principal--menu ul {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #ededed;
+    top: 80px;
+    left: -100%;
+    text-align: left;
+    transition: all .5s;
+}
+
+.header__principal--menu ul li {
+    display: block;
+    padding-top: 75px;
+    padding-left: 125px;
+}
+
+.header__principal--menu ul li a {
+    color:#2C82B8;
+}
+
+.header__principal--menu ul li a:hover {
+    color: #000;
+}
+
+.hamburguesa {
+    color: #2C82B8;
+    display: block;
+    cursor: pointer;
+}
+
+.cerrar {
+    color: #2C82B8;
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ ul {
+    left:0;
+}
+
+#check:checked ~ .hamburguesa {
+    display: none;
+}
+
+#check:checked ~ .cerrar {
+    display: block;
+}
+
+/* @media only screen and (min-width:768px) {
+    .header__contactrow{
+        width: 100%;
+        height: 25px;
+        background-color: #2C82B8;
+        display: block;
+    }
+    
+    .hamburguesa {
+        display: none;
+    }
+
+    .header__principal--menu {
+        padding-top: 10px;
+        text-align: right;
+    }
+
+    .header__principal--menu ul {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        list-style: none;
+        padding-left: 10px;
+        left: auto;
+        top: auto;
+        background: none;
+        transition: none;
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .header__principal--menu ul li {
+        display: inline-block;
+        padding-right: 15px;
+        padding-top:0;
+        padding-left:0;
+    }
+
+    .header__principal--menu ul li a {
+        color: #2C82B8;
+    }
+
+    .header__principal--menu ul li a:hover {
+        color: #000;
+    }
+} */
+
+.header__carrousel {
+    display: none;
+}
+
+#contenido {
+    grid-area: main;
+    width: 100%;
+    height: auto;
+    background-color: cyan;
+}
+
+.contenido__bienvenida {
+    display: none;
+}
+
+.contenido__bienvenida--txt {
+    display: none;
+}
+
+.contenido__bienvenida--vid {
+    display: none;
+}
+
+.contenido__desc {
+    display: none;
+}
+
+.contenido__desc--row {
+    display: none;
+}
+
+#footer {
+    grid-area: footer;
+    width: 100%;
+    height: auto;
+    background-color: violet;
+}
+
+.footer__links {
+    display: none;
+}
+
+.footer__links--row {
+    display: none;
+}
+
+.footer__autor {
+    display: none;
+}
+
+/* FIN ESTILOS ESTRUCTURA BASICA MOBILE
+
+****************************************************************
+
+ESTILOS ESTRUCTURA BASICA TABLETS */
+
+/*
 
 #container{
-    width:100%;
-    height:100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    
+    "header"
+    "cont"
+    "footer"
+    
+    ;
 }
 
 .header{
+    grid-area: header;
     width:100%;
     height: auto;
     background-color: limegreen;
 }
 
 .header__contactrow{
-    grid-area: header1;
     width: 100%;
     height: 25px;
     background-color: blue;
+    display: none;
 }
 
 .header__principal{
-    grid-area: header2;
     width:100%;
     height: auto;
     background-color: blueviolet;
@@ -47,20 +306,19 @@
 }
 
 .header__carrousel{
-    grid-area: header3;
     width: 100%;
     height: auto;
     background-color: crimson;
 }
 
 .contenido{
+    grid-area: cont;
     width: 100%;
     height: auto;
     background-color: cyan;
 }
 
 .contenido__bienvenida{
-    grid-area: cont1;
     width: 100%;
     height: auto;
     background-color: darkblue;
@@ -93,6 +351,7 @@
 }
 
 .footer{
+    grid-area: footer;
     width: 100%;
     height: auto;
     background-color: violet;
@@ -117,4 +376,5 @@
     background-color: black;
 }
 
-/* FIN ESTRUCTURA PRINCIPAL */
+
+*/
