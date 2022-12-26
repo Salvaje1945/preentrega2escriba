@@ -1,14 +1,12 @@
-
-
 /* 1 - Estilos generales */
+
+:root {
+    font-size: 16px;
+}
 
 * {
     padding: 0;
     margin: 0;
-}
-
-:root {
-    font-size: 16px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
@@ -78,13 +76,15 @@ a {
 
 }
 
+/* Menú de navegación principal */
+
 .header__principal--menu {
     padding-top: 10px;
     display: inline-block;
 }
 
 .header__principal--menu ul {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     list-style: none;
@@ -157,9 +157,15 @@ a {
     display: block;
 }
 
+/* Estilos del carousel */
+
 .header__carrousel {
     width: 100%;
     height: auto;
+}
+
+.carousel-indicators {
+    margin-bottom: 5px !important;
 }
 
 .carousel-indicators button {
@@ -169,10 +175,6 @@ a {
     border-radius: 100% !important;
     opacity: .5 !important;
     transition: 0.5s !important;
-}
-
-.carousel-indicators {
-    margin-bottom: 5px !important;
 }
 
 .carousel-indicators button.active {
@@ -204,12 +206,16 @@ a {
     opacity: .7 !important;
 }
 
+/* Fin de estilos de la cabecera
+
+****************************************************************
+
+2:B - Estilos de la sección principal */
 
 
 
 
-
-/* 
+/* Código residual:
 
 .header__principal--logo h1 {
         font-size: 30px;
