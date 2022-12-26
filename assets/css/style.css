@@ -1,13 +1,4 @@
-/* PALETA DE COLORES
 
-.color1 {color: #2C82B8;} AZUL *
-.color2 {color: #EDEDED;} GRIS CLARO
-.color3 {color: #FF99FF;} ROSA BEBE *
-.color4 {color: #E8CEAA;} BEIGE *
-.color5 {color: #444;} GRIS OSCURO
-.color6 {color: #000;} NEGRO
-
-*/
 
 /* 1 - Estilos generales */
 
@@ -16,16 +7,20 @@
     margin: 0;
 }
 
+:root {
+    font-size: 16px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
 h1 {
     color: #2C82B8;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'Oleo Script', cursive;
 }
 
 h1 span {
-    font-size: 25px;
+    font-size: 1.563rem;
     display: block;
     margin-top: -11px;
 } 
@@ -40,7 +35,7 @@ a {
 
 2 - Estilos estructura basica para moviles */
 
-#container {
+#contenedor {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
@@ -117,6 +112,19 @@ a {
     color: #000;
 }
 
+#iconos-resp{
+    padding-top: 52px;
+}
+
+.header__principal--menu ul li span {
+    display: inline-block;
+    padding: 0 15%;
+}
+
+.header__principal--menu ul li i {
+    font-size: 3rem;
+}
+
 .hamburguesa {
     color: #2C82B8;
     display: block;
@@ -139,7 +147,6 @@ a {
 #check:checked ~ ul {
     left: 0;
     padding-left: 0;
-    z-index: 999;
 }
 
 #check:checked ~ .hamburguesa {
@@ -153,8 +160,54 @@ a {
 .header__carrousel {
     width: 100%;
     height: auto;
-    z-index: 1;
 }
+
+.carousel-indicators button {
+    background-color: #000 !important;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 100% !important;
+    opacity: .5 !important;
+    transition: 0.5s !important;
+}
+
+.carousel-indicators {
+    margin-bottom: 5px !important;
+}
+
+.carousel-indicators button.active {
+    background-color: #2C82B8 !important;
+    opacity: .8 !important;
+    transition: 0.5s !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/arrow-left.svg) !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/arrow-right.svg) !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+}
+
+.carousel-control-prev-icon , .carousel-control-prev , .carousel-control-next-icon , .carousel-control-next {
+    opacity: .5 !important;
+    transition: 0.5s !important;
+}
+
+.carousel-control-prev-icon:hover , .carousel-control-prev:hover , .carousel-control-next-icon:hover , .carousel-control-next:hover {
+    opacity: .7 !important;
+}
+
+
+
+
+
 
 /* 
 
@@ -168,6 +221,11 @@ a {
     }
 
 @media only screen and (min-width:768px) {
+
+    #iconos-resp{
+        display: none;
+    }
+
     .header__contactrow{
         width: 100%;
         height: 25px;
@@ -238,7 +296,7 @@ a {
     display: none;
 }
 
-.contenido__desc--row {
+.contenido__desc--box {
     display: none;
 }
 
@@ -253,13 +311,15 @@ a {
     display: none;
 }
 
-.footer__links--row {
+.footer__links--box {
     display: none;
 }
 
 .footer__autor {
     display: none;
 }
+
+
 
 /* FIN ESTILOS ESTRUCTURA BASICA MOBILE
 
