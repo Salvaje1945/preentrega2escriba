@@ -252,8 +252,7 @@ p {
 
 .contenido__bienvenida--txt {
     display: inline-block;
-    min-width: 375px;
-    width:50%;
+    width:100%;
     padding: 20px;
     background: #fff;
     background: linear-gradient(180deg, #fff 45%, #E8CEAA 100%);
@@ -270,8 +269,7 @@ p {
 
 .contenido__bienvenida--vid {
     display: inline-block;
-    min-width: 375px;
-    width:50%;
+    width: 100%;
     background-color: #2C82B8;
     padding: 10px;
 }
