@@ -37,6 +37,14 @@ h3 {
     font-weight: 600;
 }
 
+h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+    margin:0;
+}
+
 a {
     text-decoration: none !important;
 }
@@ -46,13 +54,59 @@ p {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.875rem;
     font-weight: normal;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 /* Fin de estilos generales
 
 ****************************************************************
 
-2 - Estilos estructura basica para moviles */
+Herramientas para forzado de diseño */
+
+.ciego {
+    visibility: collapse;
+    width: 351px;
+    height: 1px;
+    padding: 0 !important;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1053px){
+    .ciego {
+        display: none;
+    }
+
+    .footer__links--box p {
+        padding-right: 10px;
+    }
+
+    .footer__links--box--form ul {
+        padding: 0 10px 0 0;
+    }
+
+    .footer__links--box--ipt {
+        width: 290px !important;
+    }
+}
+
+@media only screen and (max-width: 1052px){
+    #footer__links--box--sm {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #footer__links--box--cont {
+        display: none;
+    }
+}
+
+/* Fin de herramientas para forzado de diseño 
+
+****************************************************************
+
+2 - Estilos de estructura basica para moviles  */
 
 #contenedor {
     display: grid;
@@ -96,7 +150,6 @@ p {
     padding-top: 7px;
     text-align: left;
     display: inline-block;
-
 }
 
 /* Menú de navegación principal */
@@ -107,9 +160,6 @@ p {
 }
 
 .header__principal--menu ul {
-    font-size: 1.25rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
     list-style: none;
     position: fixed;
     width: 100%;
@@ -125,10 +175,15 @@ p {
     display: block;
     padding-top: 42px;
     text-align: center;
+    font-size: 1.45rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    text-transform: uppercase;
+    color:#2C82B8;
 }
 
 .header__principal--menu ul li a {
-    color:#2C82B8;
+    color:inherit;
 }
 
 .header__principal--menu ul li a:hover {
@@ -136,16 +191,19 @@ p {
 }
 
 #iconos-resp{
-    padding-top: 52px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
 }
 
 .header__principal--menu ul li span {
     display: inline-block;
-    padding: 0 15%;
+    margin: 0 20px 25px;
 }
 
 .header__principal--menu ul li i {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .hamburguesa {
@@ -276,16 +334,17 @@ p {
 
 .contenido__desc {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
     width: 100%;
-    padding-top:45px;
+    height: auto;
+    margin-top:30px;
 }
 
 .contenido__desc--box {
     display: inline-block;
     max-width: 351px;
+    height: auto;
     text-align: center;
     padding-bottom: 30px;
 }
@@ -294,7 +353,6 @@ p {
     width: 351px;
     height: 290px;
     overflow: hidden;
-    text-align: center;
     margin-bottom: 15px;
 }
 
@@ -311,7 +369,6 @@ p {
 }
 
 .contenido__desc--box h3 {
-    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -329,6 +386,8 @@ p {
     font-size: 0.8rem;
     text-align: center;
     margin-bottom: 20px;
+    padding: 0 5px;
+    height: auto;
 }
 
 .contenido__desc--box--btn {
@@ -355,9 +414,203 @@ p {
     transition: 0.3s;
 }
 
-/* ****************************************************************
+/* Fin de estilos de la sección principal
 
-2:B / 1- index.html */
+****************************************************************
+
+2:C - Estilos del pie */
+
+#footer {
+    grid-area: footer;
+    width: 100%;
+}
+
+.footer__links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-top: 20px;
+    background-color: #444;
+}
+
+.footer__links--box {
+    display: inline-block;
+    min-width: 351px;
+    padding-top: 20px;
+}
+
+.footer__links--box--ctr {
+    text-align: center;
+}
+
+#footer__links--box--sm {
+    padding-left: 60px;
+}
+
+.footer__links--box h1 {
+    color: #aaa;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.footer__links--box h2 {
+    color: #aaa;
+    font-size: 1.563rem;
+    font-family: 'Oleo Script', cursive;
+    margin-bottom: 0;
+} 
+
+.footer__links--box p {
+    color: #CCC;
+    text-align: justify;
+    height: auto;
+    max-width: 351px;
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+.footer__links--box--redes {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.footer__links--box--redes a {
+    font-size: 4rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.footer__links--box--redes a:hover {
+    color: #2C82B8;
+    transition: 0.5s;
+}
+
+.footer__links--box ul {
+    list-style-image:url(../img/flecha-derecha-blanca.png);
+    margin:0;
+    padding:0 0 0 15px;
+    color: #2C82B8;
+}
+
+.footer__links--box ul a {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+.footer__links--box ul a:hover {
+    color: #FF99FF;
+    text-decoration: none;
+}
+
+.footer__links--box ul ul {
+    padding-left: 20px;
+}
+
+.footer__links--box--form {
+    display: inline-block;
+    margin: 5px 0 20px 0;
+    padding: 0;
+}
+
+.footer__links--box--form ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer__links--box--form ul li {
+    flex:auto;
+}
+
+.footer__links--box--ipt {
+    display: inline;
+    width: 300px;
+    background-color: #333;
+    border: 1px solid #666;
+    border-right: 0;
+    color: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    height: 35px;
+    margin-right: 0;
+
+}
+
+.footer__links--box--btn {
+    display: inline;
+    width: 51px;
+    height: 35PX;
+    padding: 5px 5px;
+    border: 1px solid #666;
+    border-left: 0;
+    cursor: pointer;
+    background-color: #2C82B8;
+    text-align: center;
+    color: #FFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.3s;  
+    margin-left: 0;  
+}
+
+.footer__links--box--btn:hover {
+    background-color: #FF99FF;
+    color: #000;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#footer__links--box--cont ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 25px 0;
+}
+
+#footer__links--box--cont ul i {
+    color: #FFF;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 10px;
+    width: 16px;
+    font-weight: 0;
+}
+
+#footer__links--box--cont ul li {
+    margin-bottom: 5px;
+}
+
+#footer__links--box--cont ul li, #footer__links--box--cont ul li a  {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+
+}
+
+#footer__links--box--cont ul a:hover {
+    color: #2C82B8;
+}
+
+.footer__autor {
+    display: block;
+    width: 100%;
+    height: 35px;
+    background-color: #000;
+    text-align: center;
+}
+
 
 
 /* Código residual:
@@ -425,24 +678,7 @@ p {
 } */
 
 
-#footer {
-    grid-area: footer;
-    width: 100%;
-    height: auto;
-    background-color: violet;
-}
 
-.footer__links {
-    display: none;
-}
-
-.footer__links--box {
-    display: none;
-}
-
-.footer__autor {
-    display: none;
-}
 
 
 
