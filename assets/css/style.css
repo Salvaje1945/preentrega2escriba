@@ -341,21 +341,23 @@ Arreglo para la altura de línea del logo de la cabecera ***/
 /* HERRAMIENTAS PARA FORZAR LOS ESTILOS DEL CAROUSEL DE BOOTSTRAP (NO TOCAR!!!) */
 
 .carousel-indicators {
-    margin-bottom: 5px !important;
+    margin-bottom: 7px !important;
 }
 
 .carousel-indicators button {
     background-color: #000 !important;
-    width: 16px !important;
-    height: 16px !important;
+    width: 12px !important;
+    height: 12px !important;
     border-radius: 100% !important;
-    opacity: .5 !important;
+    margin: 0 7px !important;
+    border: 7px !important;
+    opacity: .3 !important;
     transition: 0.5s !important;
 }
 
 .carousel-indicators button.active {
     background-color: #2C82B8 !important;
-    opacity: .8 !important;
+    opacity: .5 !important;
     transition: 0.5s !important;
 }
 
@@ -379,6 +381,7 @@ Arreglo para la altura de línea del logo de la cabecera ***/
 .carousel-control-next {
     opacity: .5 !important;
     transition: 0.5s !important;
+    visibility: hidden !important;
 }
 
 .carousel-control-prev-icon:hover,
@@ -799,6 +802,22 @@ Notas:
      
      .contenido__bienvenida--vid {
         width:50%;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-prev, .carousel-control-next-icon, .carousel-control-next {
+        visibility: visible !important;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 10px !important;
+    }
+
+    .carousel-indicators button {
+        width: 15px !important;
+        height: 15px !important;
+        border: 10px !important;
+        margin: 0 10px !important;
+
     }
 }
 
