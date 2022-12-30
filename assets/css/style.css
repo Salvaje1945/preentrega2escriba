@@ -50,13 +50,16 @@ h5,
 a,
 p,
 .header__principal--menu ul li,
-.contenido__desc--box h3 a
+.contenido__desc--box h3 a,
 .contenido__desc--box--btn,
+.footer__links--box ul,
 .footer__links--box ul a,
 .footer__links--box--ipt,
 .footer__links--box--btn,
 #footer__links--box--cont ul li,
-#footer__links--box--cont ul li a, .header__contactrow div ul li, .header__contactrow div ul li a {
+#footer__links--box--cont ul li a,
+.header__contactrow div ul li,
+.header__contactrow div ul li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -69,7 +72,8 @@ p,
     color: #000;
 }
 
-.header__contactrow div ul li a:hover, .header__contactrow div ul li span a i:hover {
+.header__contactrow div ul li a:hover,
+.header__contactrow div ul li span a i:hover {
     color: #333;
 }
 
@@ -100,7 +104,10 @@ h5 {
 h4,
 .contenido__desc--box--btn,
 .footer__links--box--btn,
-#footer__links--box--cont ul i, .header__contactrow div ul li, .header__contactrow div ul li a, .header__contactrow div ul li i {
+#footer__links--box--cont ul i,
+.header__contactrow div ul li,
+.header__contactrow div ul li a,
+.header__contactrow div ul li i {
     color: #fff;
 }
 
@@ -130,12 +137,26 @@ p {
     font-size: 0.875rem;
 }
 
-h5, .contenido__desc--box--btn {
+h5,
+.contenido__desc--box--btn {
     font-size: 0.9rem;
 }
 
-h4, .footer__links--box ul a, .footer__links--box--ipt, .footer__links--box--btn, #footer__links--box--cont ul i, #footer__links--box--cont ul li, #footer__links--box--cont ul li a, .header__contactrow div ul li, .header__contactrow div ul li a, .header__contactrow div ul li i {
+h4,
+.footer__links--box ul a,
+.footer__links--box--ipt,
+.footer__links--box--btn,
+#footer__links--box--cont ul i,
+#footer__links--box--cont ul li,
+#footer__links--box--cont ul li a,
+.header__contactrow div ul li,
+.header__contactrow div ul li a,
+.header__contactrow div ul li i {
     font-size: 1rem;
+}
+
+#footer__links--box--sm ul li {
+    font-size: 1.031rem;
 }
 
 .header__principal--menu ul li {
@@ -147,7 +168,8 @@ h3,
     font-size: 1.5rem;
 }
 
-.footer__links--box h2, .header__principal--logo h1 span {
+.footer__links--box h2,
+.header__principal--logo h1 span {
     font-size: 1.563rem;
 }
 
@@ -173,15 +195,24 @@ h2 {
 
 /***GROSORES***/
 
-p, h4, h5, .contenido__desc--box--btn, .footer__links--box--btn {
+p,
+h4,
+h5,
+.contenido__desc--box--btn,
+.footer__links--box--btn {
     font-weight: normal;
 }
 
-h2, h3, .header__principal--menu ul li, .contenido__desc--box--btn:hover, .footer__links--box--btn:hover {
+h2,
+h3,
+.header__principal--menu ul li,
+.contenido__desc--box--btn:hover,
+.footer__links--box--btn:hover {
     font-weight: 600;
 }
 
-.header__contactrow div ul li, .header__contactrow div ul li a {
+.header__contactrow div ul li,
+.header__contactrow div ul li a {
     font-weight: 500;
 }
 
@@ -209,25 +240,39 @@ h2, h3, .header__principal--menu ul li, .contenido__desc--box--btn:hover, .foote
 
 /***ALINEACIONES DE TEXTO***/
 
-.header__principal--logo, .footer__links {
+.header__principal--logo,
+.footer__links {
     text-align: left;
 }
 
-.header__principal--menu ul li, .cerrar, .contenido__bienvenida--txt h2, .contenido__desc--box, .contenido__desc--box p, .contenido__desc--box--btn, .footer__links--box--ctr, .footer__links--box--btn, #footer__links--box--cont ul i, .footer__autor {
+.header__principal--menu ul li,
+.cerrar,
+.contenido__bienvenida--txt h2,
+.contenido__desc--box,
+.contenido__desc--box p,
+.contenido__desc--box--btn,
+.footer__links--box--ctr,
+.footer__links--box--btn,
+#footer__links--box--cont ul i,
+.footer__autor {
     text-align: center;
 }
 
-.footer__links--box p, .contenido__bienvenida--txt p {
+.footer__links--box p,
+.contenido__bienvenida--txt p {
     text-align: justify;
 }
 
-.header__contactrow div, .header__contactrow div ul {
+.header__contactrow div,
+.header__contactrow div ul {
     text-align: right;
 }
 
 /***MARGENES Y RELLENOS DE PÁRRAFOS Y TÍTULOS***/
 
-.footer__links--box h1, .footer__links--box h2, .header__contactrow div ul {
+.footer__links--box h1,
+.footer__links--box h2,
+.header__contactrow div ul {
     margin-bottom: 0;
 }
 
@@ -235,7 +280,8 @@ h2, h3, .header__principal--menu ul li, .contenido__desc--box--btn:hover, .foote
     margin-bottom: 10px;
 }
 
-.contenido__bienvenida--txt h2, .contenido__desc--box p {
+.contenido__bienvenida--txt h2,
+.contenido__desc--box p {
     margin-bottom: 20px;
 }
 
@@ -251,7 +297,10 @@ h2, h3, .header__principal--menu ul li, .contenido__desc--box--btn:hover, .foote
     list-style-image: url(../img/flecha-derecha-blanca.png);
 }
 
-.header__principal--menu ul, .footer__links--box--form ul, #footer__links--box--cont ul, .header__contactrow div ul {
+.header__principal--menu ul,
+.footer__links--box--form ul,
+#footer__links--box--cont ul,
+.header__contactrow div ul {
     list-style: none;
 }
 
@@ -279,11 +328,15 @@ h2, h3, .header__principal--menu ul li, .contenido__desc--box--btn:hover, .foote
     background-color: #444;
 }
 
-.contenido__bienvenida--vid, .contenido__desc--box--btn, .footer__links--box--btn, .header__contactrow {
+.contenido__bienvenida--vid,
+.contenido__desc--box--btn,
+.footer__links--box--btn,
+.header__contactrow {
     background-color: #2C82B8;
 }
 
-.contenido__desc--box--btn:hover, .footer__links--box--btn:hover {
+.contenido__desc--box--btn:hover,
+.footer__links--box--btn:hover {
     background-color: #FF99FF;
 }
 
@@ -295,7 +348,8 @@ h2, h3, .header__principal--menu ul li, .contenido__desc--box--btn:hover, .foote
     border: 1px solid #444;
 }
 
-.footer__links--box--ipt, .footer__links--box--btn {
+.footer__links--box--ipt,
+.footer__links--box--btn {
     border: 1px solid #666;
 }
 
@@ -303,11 +357,18 @@ h2, h3, .header__principal--menu ul li, .contenido__desc--box--btn:hover, .foote
 
 1-E Animaciones (Transiciones y transformaciones) */
 
-.header__principal--menu ul, .contenido__desc--box--btn, .contenido__desc--box--btn:hover, .footer__links--box--redes a, .footer__links--box--redes a:hover, .footer__links--box--btn, .footer__links--box--btn:hover {
+.header__principal--menu ul,
+.contenido__desc--box--btn,
+.contenido__desc--box--btn:hover,
+.footer__links--box--redes a,
+.footer__links--box--redes a:hover,
+.footer__links--box--btn,
+.footer__links--box--btn:hover {
     transition: 0.5s;
 }
 
-.contenido__desc--box--img a img, .contenido__desc--box--img a img:hover {
+.contenido__desc--box--img a img,
+.contenido__desc--box--img a img:hover {
     transition: 1s;
 }
 
@@ -323,7 +384,12 @@ h2, h3, .header__principal--menu ul li, .contenido__desc--box--btn:hover, .foote
     overflow: hidden;
 }
 
-.hamburguesa, .cerrar, .contenido__desc--box--img a img, .contenido__desc--box--btn, .footer__links--box--redes a, .footer__links--box--btn {
+.hamburguesa,
+.cerrar,
+.contenido__desc--box--img a img,
+.contenido__desc--box--btn,
+.footer__links--box--redes a,
+.footer__links--box--btn {
     cursor: pointer;
 }
 
@@ -433,11 +499,30 @@ Notas:
 
 2-B  Ancho y alto de las grillas, cajas flexibles y otros elementos */
 
-#header, #contenido, #footer, .header__principal, .header__principal--menu ul, .header__carrousel, .contenido__bienvenida, .contenido__bienvenida--txt, .contenido__bienvenida--vid, .contenido__desc, .footer__links, .footer__links--box--redes, .footer__autor, .header__contactrow {
+#header,
+#contenido,
+#footer,
+.header__principal,
+.header__principal--menu ul,
+.header__carrousel,
+.contenido__bienvenida,
+.contenido__bienvenida--txt,
+.contenido__bienvenida--vid,
+.contenido__desc,
+.footer__links,
+.footer__links--box--redes,
+.footer__autor,
+.header__contactrow {
     width: 100%;
 }
 
-#header, .header__carrousel, .contenido__desc, .contenido__desc--box, .contenido__desc--box p, .footer__links, .footer__links--box p {
+#header,
+.header__carrousel,
+.contenido__desc,
+.contenido__desc--box,
+.contenido__desc--box p,
+.footer__links,
+.footer__links--box p {
     height: auto;
 }
 
@@ -449,23 +534,48 @@ Notas:
 
 2-C  Despliegue de las cajas (y otros elementos) */
 
-.header__principal, #iconos-resp, .contenido__bienvenida, .contenido__desc, .footer__links, .footer__links--box--redes, .footer__links--box--form ul {
+.header__principal,
+#iconos-resp,
+.contenido__bienvenida,
+.contenido__desc,
+.footer__links,
+.footer__links--box--redes,
+.footer__links--box--form ul {
     display: flex;
 }
 
-.header__principal--menu ul li, .hamburguesa, .contenido__desc--box--btn, .footer__autor, #check:checked~.cerrar {
+.header__principal--menu ul li,
+.hamburguesa,
+.contenido__desc--box--btn,
+.footer__autor,
+#check:checked~.cerrar {
     display: block;
-} 
+}
 
-.header__principal--logo, .header__principal--menu, .header__principal--menu ul li span, .contenido__bienvenida--txt, .contenido__bienvenida--vid, .contenido__desc--box, .footer__links--box, .footer__links--box--redes a, .footer__links--box--form, .header__contactrow div, .header__contactrow div ul li {
+.header__principal--logo,
+.header__principal--menu,
+.header__principal--menu ul li span,
+.contenido__bienvenida--txt,
+.contenido__bienvenida--vid,
+.contenido__desc--box,
+.footer__links--box,
+.footer__links--box--redes a,
+.footer__links--box--form,
+.header__contactrow div,
+.header__contactrow div ul li {
     display: inline-block;
 }
 
-.footer__links--box--ipt, .footer__links--box--btn {
+.footer__links--box--ipt,
+.footer__links--box--btn {
     display: inline;
 }
 
-.header__contactrow, .cerrar, #check, #check:checked~.hamburguesa, #enlace__menu__contactos {
+.header__contactrow,
+.cerrar,
+#check,
+#check:checked~.hamburguesa,
+#enlace__menu__contactos {
     display: none;
 }
 
@@ -473,11 +583,15 @@ Notas:
 
 2-D  Cajas flexibles predeterminadas */
 
-.flex-1, .flex-2, .flex-3, .flex-4 {
+.flex-1,
+.flex-2,
+.flex-3,
+.flex-4 {
     flex-flow: row wrap;
 }
 
-.flex-1, .flex-2 {
+.flex-1,
+.flex-2 {
     justify-content: space-around;
 }
 
@@ -498,10 +612,6 @@ Notas:
 2-E  Estilos particulares divididos por sección de la página */
 
 /***CABECERA***/
-
-/* .header__contactrow div ul li i {
-    padding-right: 3px;
-} */
 
 .header__contactrow div ul li a {
     padding-right: 10px;
@@ -624,6 +734,10 @@ Notas:
 
 #footer__links--box--sm {
     padding-left: 60px;
+}
+
+#footer__links--box--sm ul {
+    line-height: 1.45;
 }
 
 .footer__links--box--redes {
@@ -759,7 +873,12 @@ Notas:
         padding-top: 3px;
     }
 
-    #check, .hamburguesa, .cerrar, #iconos-resp, #enlace__menu__contactos__no, .header__principal--menu ul li span {
+    #check,
+    .hamburguesa,
+    .cerrar,
+    #iconos-resp,
+    #enlace__menu__contactos__no,
+    .header__principal--menu ul li span {
         display: none;
     }
 
@@ -769,8 +888,8 @@ Notas:
 
     .header__principal--menu ul {
         position: unset;
-        top:auto;
-        left:auto;
+        top: auto;
+        left: auto;
         padding-top: 0;
         text-align: right;
         background: none;
@@ -800,11 +919,14 @@ Notas:
         width: 50%;
     }
      
-     .contenido__bienvenida--vid {
-        width:50%;
+    .contenido__bienvenida--vid {
+        width: 50%;
     }
 
-    .carousel-control-prev-icon, .carousel-control-prev, .carousel-control-next-icon, .carousel-control-next {
+    .carousel-control-prev-icon,
+    .carousel-control-prev,
+    .carousel-control-next-icon,
+    .carousel-control-next {
         visibility: visible !important;
     }
 
@@ -817,7 +939,6 @@ Notas:
         height: 15px !important;
         border: 10px !important;
         margin: 0 10px !important;
-
     }
 }
 
