@@ -16,9 +16,37 @@
     <div id="contenedor">
         <header id="header">
             <div class="header__contactrow">
-                <p>Contactos rápidos</p>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="#">+54 11 3699 0048</a>|
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="#">info@isabelrivas.com.ar</a>|
+                        </li>
+                        <li>
+                            <span>
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="header__principal">
+            <div class="header__principal flex-1">
                 <div class="header__principal--logo">
                     <h1>Isabel Rivas<br>
                         <span>Acompañante terapéutica</span>
@@ -36,8 +64,9 @@
                         <li><a href="acercade.html">Sobre mi</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
                         <li><a href="recursos.html">Recursos educativos</a></li>
-                        <li>Contactos:</li>
-                        <li id="iconos-resp">
+                        <li id="enlace__menu__contactos"><a href="#footer__links--box--cont">Contactos</a></li>
+                        <li id="enlace__menu__contactos__no">Contactos:</li>
+                        <li id="iconos-resp" class="flex-3">
                             <span>
                                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                             </span>
@@ -63,12 +92,9 @@
             <div class="header__carrousel">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -81,8 +107,7 @@
                             <img src="assets/img/img3.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
@@ -94,18 +119,18 @@
             </div>
         </header>
         <main id="contenido">
-            <section class="contenido__bienvenida">
+            <section class="contenido__bienvenida flex-4">
                 <article class="contenido__bienvenida--txt">
                     <h2>Título de bienvenida</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius et nunc a ullamcorper. Maecenas at velit elit. Duis laoreet nulla vel purus aliquet, vel tincidunt ex fringilla. Ut at egestas leo. Donec a ipsum cursus, interdum turpis a, ullamcorper velit. Maecenas consequat malesuada mauris et vehicula. Donec in viverra risus, nec tempor dolor. Phasellus mauris dui, feugiat eu lorem sed, pellentesque facilisis mi. Proin ultricies risus nec diam mollis tempor. In bibendum non risus sit amet facilisis. Suspendisse vitae dictum mi, eu molestie diam. In nec nisi ornare ipsum pellentesque pharetra. Donec eget nulla in massa venenatis rhoncus. Curabitur id pharetra nisi, ac posuere nulla. Sed tempor facilisis purus ac vehicula.</p>
                 </article>
                 <article class="contenido__bienvenida--vid">
                     <div>
-                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/C-Grfn5spKQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" style="display:block;" src="https://www.youtube-nocookie.com/embed/C-Grfn5spKQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </article>
             </section>
-            <section class="contenido__desc">
+            <section class="contenido__desc flex-3">
                 <article class="contenido__desc--box">
                     <div class="contenido__desc--box--img">
                         <a href="#"><img src="assets/img/terapia-cognitiva.jpg"></a>
@@ -142,12 +167,12 @@
             </section>
         </main>
         <footer id="footer">
-            <div class="footer__links">
+            <div class="footer__links flex-3">
                 <div class="footer__links--box">
                     <div class="footer__links--box--ctr">
-                        <h1>Isabel Rivas<h1>
+                        <h1>Isabel Rivas</h1>
                         <h2>Acompañante terapéutica</h2>
-                        <div class="footer__links--box--redes">
+                        <div class="footer__links--box--redes flex-2">
                             <a href="#"><i class="fa-brands fa-youtube"></i></a>
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             <a href="#"><i class="fa-brands fa-twitter"></i></a>
