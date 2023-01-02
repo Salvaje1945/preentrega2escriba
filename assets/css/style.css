@@ -33,6 +33,7 @@ p {
 1-A - Fuentes (familias, colores, tamaños, grosores, decoraciones y otros estilos, alineaciones de texto) */
 
 h1,
+.header__principal--logo h1 a,
 .footer__links--box h1,
 .footer__links--box h2 {
     font-family: 'Oleo Script', cursive;
@@ -45,6 +46,7 @@ h5,
 a,
 p,
 .header__principal--menu ul li,
+.header__principal--menu--inact,
 .contenido__desc--box h3 a,
 .contenido__desc--box--btn,
 .footer__links--box ul,
@@ -60,13 +62,15 @@ p,
 
 p,
 .header__principal--menu ul li a:hover,
+.header__principal--menu--inact,
 .contenido__desc--box--btn:hover,
 .footer__links--box--btn:hover {
     color: #000;
 }
 
 .header__contactrow div ul li a:hover,
-.header__contactrow div ul li span a i:hover {
+.header__contactrow div ul li span a i:hover,
+.header__principal--logo h1 a:hover {
     color: #333;
 }
 
@@ -105,6 +109,7 @@ h4,
 }
 
 .header__principal--logo h1,
+.header__principal--logo h1 a,
 .header__principal--menu ul li,
 .hamburguesa,
 .cerrar,
@@ -150,7 +155,8 @@ h4,
     font-size: 1.031rem;
 }
 
-.header__principal--menu ul li {
+.header__principal--menu ul li,
+.header__principal--menu--inact {
     font-size: 1.45rem;
 }
 
@@ -195,6 +201,7 @@ h5,
 h2,
 h3,
 .header__principal--menu ul li,
+.header__principal--menu--inact,
 .contenido__desc--box--btn:hover,
 .footer__links--box--btn:hover {
     font-weight: 600;
@@ -209,7 +216,8 @@ h3,
     text-decoration: none;
 }
 
-.header__principal--menu ul li {
+.header__principal--menu ul li,
+.header__principal--menu--inact {
     text-transform: uppercase;
 }
 
@@ -853,7 +861,8 @@ Arreglo para la altura de línea del logo de la cabecera */
         padding: 0 5px 0 0;
     }
 
-    .header__principal--menu ul li {
+    .header__principal--menu ul li,
+    .header__principal--menu--inact {
         text-transform: none;
         display: inline-block;
         padding: 0 0 0 20px;
