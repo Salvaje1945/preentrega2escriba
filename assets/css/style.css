@@ -29,13 +29,8 @@ p {
     margin-block-end: 0;
 }
 
-/* 1 - Estilos generales
-
-***************************************
-
-1-A - Fuentes (familias, colores, tamaños, grosores, decoraciones y otros estilos, alineaciones de texto) 
-
-***FAMILIAS***/
+/* 1 - Estilos generales:
+1-A - Fuentes (familias, colores, tamaños, grosores, decoraciones y otros estilos, alineaciones de texto) */
 
 h1,
 .footer__links--box h1,
@@ -62,8 +57,6 @@ p,
 .header__contactrow div ul li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/***COLORES***/
 
 p,
 .header__principal--menu ul li a:hover,
@@ -126,8 +119,6 @@ h4,
 .footer__links--box ul a:hover {
     color: #FF99FF;
 }
-
-/***TAMAÑOS***/
 
 .contenido__desc--box p {
     font-size: 0.8rem;
@@ -193,8 +184,6 @@ h2 {
     font-size: 4rem;
 }
 
-/***GROSORES***/
-
 p,
 h4,
 h5,
@@ -216,8 +205,6 @@ h3,
     font-weight: 500;
 }
 
-/***DECORACIÓN Y OTROS ESTILOS***/
-
 .footer__links--box ul a:hover {
     text-decoration: none;
 }
@@ -238,13 +225,12 @@ h3,
     font-style: italic;
 }
 
-/***ALINEACIONES DE TEXTO***/
-
 .header__principal--logo,
 .footer__links {
     text-align: left;
 }
 
+.header__contactrow,
 .header__principal--menu ul li,
 .cerrar,
 .contenido__bienvenida--txt h2,
@@ -268,8 +254,6 @@ h3,
     text-align: right;
 }
 
-/***MARGENES Y RELLENOS DE PÁRRAFOS Y TÍTULOS***/
-
 .footer__links--box h1,
 .footer__links--box h2,
 .header__contactrow div ul {
@@ -289,9 +273,7 @@ h3,
     margin-top: 5px;
 }
 
-/****************************************
-
-1-B Listas */
+/* 1-B Listas */
 
 .footer__links--box ul {
     list-style-image: url(../img/flecha-derecha-blanca.png);
@@ -308,9 +290,7 @@ h3,
     padding-left: 0;
 }
 
-/****************************************
-
-1-C Colores de fondo */
+/* 1-C Colores de fondo */
 
 .header__principal--menu ul {
     background-color: #ededed;
@@ -340,9 +320,7 @@ h3,
     background-color: #FF99FF;
 }
 
-/****************************************
-
-1-D Bordes */
+/* 1-D Bordes */
 
 .contenido__desc--box--btn {
     border: 1px solid #444;
@@ -353,9 +331,7 @@ h3,
     border: 1px solid #666;
 }
 
-/****************************************
-
-1-E Animaciones (Transiciones y transformaciones) */
+/* 1-E Animaciones (Transiciones y transformaciones) */
 
 .header__principal--menu ul,
 .contenido__desc--box--btn,
@@ -376,9 +352,7 @@ h3,
     transform: scale(1.2);
 }
 
-/****************************************
-
-1-F Misceláneos (Overflows, cursores, etc) */
+/* 1-F Misceláneos (Overflows, cursores, etc) */
 
 .contenido__desc--box--img {
     overflow: hidden;
@@ -393,11 +367,8 @@ h3,
     cursor: pointer;
 }
 
-/****************************************
-
-1-G Herramientas de forzado de diseño:
-
-Arreglo para la altura de línea del logo de la cabecera ***/ 
+/* 1-G Herramientas de forzado de diseño:
+Arreglo para la altura de línea del logo de la cabecera */ 
 
 .header__principal--logo h1 span {
     display: block;
@@ -458,16 +429,9 @@ Arreglo para la altura de línea del logo de la cabecera ***/
 }
 
 /* FIN DE LAS HERRAMIENTAS PARA FORZAR LOS ESTILOS DEL CAROUSEL DE BOOTSTRAP 
-
-Fin de estilos generales.
-
-****************************************************************
-
-2 - Estructura básica general para móviles y tablets (resoluciones desde ancho de pantalla desde 375px a 1023px* y a 1053px*).
-Notas:
-*Aunque pudiera parecer innecesario, establecer puntos de ruptura tanto en 1023px como en 1053px hace que el diseño base para móviles sea totalmente funcional para resoluciones de escritorio, lo que podría llegar a ser útil en algún momento. 
-
-2-A Grilla */
+*** Fin de estilos generales.***
+2 - Estructura básica general para TODA la plantilla (La plantilla del sitio fue desarrollada de forma tal que, si bien desde su concepción se priorizó su correcta visualización en dispositivos móviles, a la hora de adaptarla a resoluciones de pantalla de "escritorio", sólo se necesitasen pequeños ajustes en lugar de una diagramación nueva).
+2-A - Grilla */
 
 #contenedor {
     display: grid;
@@ -484,7 +448,6 @@ Notas:
 
 #header {
     grid-area: header;
-    min-width: 375px;
 }
 
 #contenido {
@@ -495,9 +458,7 @@ Notas:
     grid-area: footer;
 }
 
-/****************************************
-
-2-B  Ancho y alto de las grillas, cajas flexibles y otros elementos */
+/* 2-B - Ancho y alto de las grillas, cajas flexibles y otros elementos */
 
 #header,
 #contenido,
@@ -517,6 +478,17 @@ Notas:
 }
 
 #header,
+#contenido,
+#footer {
+    min-width: 375px;
+}
+
+.header__principal--container {
+    min-width: 325px;
+    width: 80%;
+}
+
+#header,
 .header__carrousel,
 .contenido__desc,
 .contenido__desc--box,
@@ -530,11 +502,10 @@ Notas:
     height: 100vh;
 }
 
-/****************************************
-
-2-C  Despliegue de las cajas (y otros elementos) */
+/* 2-C - Despliegue de las cajas (y otros elementos) */
 
 .header__principal,
+.header__principal--container,
 #iconos-resp,
 .contenido__bienvenida,
 .contenido__desc,
@@ -579,14 +550,13 @@ Notas:
     display: none;
 }
 
-/****************************************
-
-2-D  Cajas flexibles predeterminadas */
+/* 2-D - Cajas flexibles predeterminadas */
 
 .flex-1,
 .flex-2,
 .flex-3,
-.flex-4 {
+.flex-4,
+.flex-5 {
     flex-flow: row wrap;
 }
 
@@ -595,7 +565,8 @@ Notas:
     justify-content: space-around;
 }
 
-.flex-1 {
+.flex-1,
+.flex-5 {
     align-items: center;
 }
 
@@ -607,11 +578,11 @@ Notas:
     justify-content: flex-start;
 }
 
-/****************************************
+.flex-5 {
+    justify-content: space-between;
+}
 
-2-E  Estilos particulares divididos por sección de la página */
-
-/***CABECERA***/
+/* 2-E - Estilos para elementos particulares divididos por sección de la página */
 
 .header__contactrow div ul li a {
     padding-right: 10px;
@@ -627,16 +598,13 @@ Notas:
 }
 
 .header__principal {
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding: 5px 0 15px 0;
     background: linear-gradient(180deg, #fff 0%, #ededed 100%);
 }
 
 .header__principal--logo {
     padding-top: 7px;
 }
-
-/***CABECERA - MENÚ DE NAVEGACIÓN***/
 
 .header__principal--menu {
     padding-top: 10px;
@@ -674,8 +642,6 @@ Notas:
     left: 0;
     padding-left: 0;
 }
-
-/***CONTENIDO***/
 
 .contenido__bienvenida--txt {
     padding: 20px;
@@ -716,8 +682,6 @@ Notas:
     padding: 7px 5px;
     margin: 0 auto;
 }
-
-/***PIE***/
 
 .footer__links {
     padding-top: 20px;
@@ -800,11 +764,10 @@ Notas:
     padding: 5px;
 }
 
-/****************************************
-
-2-F  Herramientas para forzado de diseño y @MediaQuerys */
+/* 2-F - Herramientas para forzar la funcionalidad de la plantilla en resoluciones de ancho de pantalla mayores a 1023px y 1052px. */
 
 .ciego {
+    /* Este elemento sirve para forzar la ubicación del último bloque dentro de las cajas flexibles de 3 bloques en línea hacia el márgen izquierdo en lugar de ubicarse en el centro de la segunda fila al momento en que el ancho de pantalla supera los 701px.  */
     visibility: collapse;
     width: 351px;
     height: 1px;
@@ -812,33 +775,24 @@ Notas:
     margin: 0;
 }
 
-@media only screen and (min-width: 1053px) {
-    .ciego {
-        display: none;
-    }
-
-    .footer__links--box p {
-        padding-right: 10px;
-    }
-
-    .footer__links--box--form ul {
-        padding: 0 10px 0 0;
-    }
-
-    .footer__links--box--ipt {
-        width: 290px !important;
-    }
-}
-
-@media only screen and (max-width: 1052px) {
-    #footer__links--box--sm {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 1023px) {
     #footer__links--box--cont {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .flex-4 {
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .contenido__bienvenida--txt {
+        width: 50%;
+    }
+
+    .contenido__bienvenida--vid {
+        width: 50%;
     }
 }
 
@@ -865,8 +819,11 @@ Notas:
     }
 
     .header__principal {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 0;
+    }
+
+    .header__principal--container {
+        min-width: 922px;
     }
 
     .header__principal--logo {
@@ -883,44 +840,28 @@ Notas:
     }
 
     .header__principal--menu {
-        padding-top: 0;
+        padding-top: 12px;
     }
 
     .header__principal--menu ul {
         position: unset;
         top: auto;
         left: auto;
-        padding-top: 0;
         text-align: right;
         background: none;
         height: auto;
-        padding-left: 0;
-        margin-bottom: 0;
+        padding: 0 5px 0 0;
     }
 
     .header__principal--menu ul li {
         text-transform: none;
         display: inline-block;
-        padding-top: 0;
-        padding-left: 20px;
+        padding: 0 0 0 20px;
         font-weight: 500;
     }
 
     #enlace__menu__contactos {
         display: inline-block;
-    }
-
-    .flex-4 {
-        flex-flow: row nowrap;
-        justify-content: center;
-    }
-
-    .contenido__bienvenida--txt {
-        width: 50%;
-    }
-     
-    .contenido__bienvenida--vid {
-        width: 50%;
     }
 
     .carousel-control-prev-icon,
@@ -942,207 +883,60 @@ Notas:
     }
 }
 
-
-/* Fin de la estructura básica general para móviles y tablets.
-
-****************************************************************
-
-3 - Estructura para resoluciones de escritorio (1280px en adelante).
-
-3-A Grilla */
-
-/* Código residual:
-
-.header__principal--logo h1 {
-        font-size: 30px;
+@media only screen and (max-width: 1052px) {
+    #footer__links--box--sm {
+        display: none;
     }
+}
 
-    .header__principal--logo h1 span {
-        font-size: 20px;
-        margin-top: -10px;
-    }
-
-@media only screen and (min-width:768px) {
-
-    #iconos-resp{
+@media only screen and (min-width: 1053px) {
+    .ciego {
         display: none;
     }
 
-    .header__contactrow{
-        width: 100%;
-        height: 25px;
-        background-color: #2C82B8;
-        display: block;
-    }
-    
-    .hamburguesa {
-        display: none;
+    .footer__links--box p {
+        padding-right: 10px;
     }
 
-    .header__principal--menu {
-        padding-top: 10px;
+    .footer__links--box--form ul {
+        padding: 0 10px 0 0;
+    }
+
+    .footer__links--box--ipt {
+        width: 290px !important;
+    }
+}
+
+/* Fin de la estructura básica general.
+3 - Modificación de elementos para adaptación correcta a resoluciones de escritorio (1280px en adelante). */
+
+@media only screen and (min-width: 1280px) {
+    .header__contactrow {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+    .header__contactrow div {
+        display: inline-block;
+        min-width: 1280px;
+        width: auto;
+        margin: 0;
         text-align: right;
     }
 
-    .header__principal--menu ul {
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;
-        list-style: none;
-        padding-left: 10px;
-        left: auto;
-        top: auto;
-        background: none;
-        transition: none;
-        width: 100%;
-        height: auto;
-        position: static;
+    .header__principal--container {
+        min-width: 1280px;
+        width: auto;
     }
 
-    .header__principal--menu ul li {
-        display: inline-block;
-        padding-right: 15px;
-        padding-top:0;
-        padding-left:0;
+    .header__principal--logo h1 {
+        font-size: 3.125rem;
     }
 
-    .header__principal--menu ul li a {
-        color: #2C82B8;
+    .header__principal--logo h1 span {
+        font-size: 1.875rem;
     }
-
-    .header__principal--menu ul li a:hover {
-        color: #000;
-    }
-} */
-
-
-
-
-
-
-/* FIN ESTILOS ESTRUCTURA BASICA MOBILE
-
-****************************************************************
-
-ESTILOS ESTRUCTURA BASICA TABLETS */
-
-/*
-
-#container{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3,auto);
-    grid-template-areas: 
-    
-    "header"
-    "cont"
-    "footer"
-    
-    ;
 }
 
-.header{
-    grid-area: header;
-    width:100%;
-    height: auto;
-    background-color: limegreen;
-}
-
-.header__contactrow{
-    width: 100%;
-    height: 25px;
-    background-color: blue;
-    display: none;
-}
-
-.header__principal{
-    width:100%;
-    height: auto;
-    background-color: blueviolet;
-}
-
-.header__principal--logo{
-    width: 40%;
-    text-align: left;
-    background-color: brown;
-}
-
-.header__principal--menu{
-    width: 40%;
-    text-align: right;
-    background-color: burlywood;
-}
-
-.header__carrousel{
-    width: 100%;
-    height: auto;
-    background-color: crimson;
-}
-
-.contenido{
-    grid-area: cont;
-    width: 100%;
-    height: auto;
-    background-color: cyan;
-}
-
-.contenido__bienvenida{
-    width: 100%;
-    height: auto;
-    background-color: darkblue;
-}
-
-.contenido__bienvenida--txt{
-    width: 50%;
-    height: auto;
-    text-align: left;
-    background-color: darkcyan;
-}
-
-.contenido__bienvenida--vid{
-    width: 50%;
-    height: auto;
-    text-align: center;
-    background-color: darkgoldenrod;
-}
-
-.contenido__desc{
-    width: 100%;
-    height: auto;
-    background-color: darkmagenta;
-}
-
-.contenido__desc--row{
-    width: 33%;
-    height: auto;
-    background-color: darkred;
-}
-
-.footer{
-    grid-area: footer;
-    width: 100%;
-    height: auto;
-    background-color: violet;
-}
-
-.footer__links{
-    width: 100%;
-    height: auto;
-    background-color: tomato;
-}
-
-.footer__links--row{
-    width: 33%;
-    height: auto;
-    background-color: springgreen;
-}
-
-.footer__autor{
-    width: 100%;
-    height: 25px;
-    text-align: center;
-    background-color: black;
-}
-
-
-*/
+/***FIN DE LA PLANTILLA***/
